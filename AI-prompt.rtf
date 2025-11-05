@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\froman\fcharset0 Times-Roman;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww10900\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 App maker, app maker, make me an app!\
+\
+I want to build a react application called \'93PlanWise\'94 with the following features:\
+\
+1. core functionality:\
+	- home page user can login with username and password and login button, or click create account button.\
+	- if login, just take them to the main app page \'93
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Smart Event Entry\'94\
+	- if create account, users create an account with first name, last name, username, password (no dbs setup yet, so for now just save this somewhere locally like login_info.csv with cols username, password) and click "create account"\
+	- Then next page is membership type. users choose basic plan $0, only can use 
+\f0\fs24 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 main app page \'93
+\f1\fs29\fsmilli14667 \expnd0\expndtw0\kerning0
+Smart Event Entry\'94, monthly plan $5, for 
+\fs29\fsmilli14667 \outl0\strokewidth0 \strokec2 Premium Features, or $80 for whole life membership.\
+	- next page is payment page. Here they enter credit card info and click pay.  Stripe will handle paymet. Each of these options has a sepearte stripe price id. All the relevent API keys are in my 2 .env files, one for the front end and one for the backend server that handles the stripe payment.  Just tell me what to call the varibles in these 2 .env files.\
+	-    - next if payment is successful, it goes to the page 
+\fs29\fsmilli14667 \outl0\strokewidth0 Smart Event Entry. and all other feature panel will not show grey locked sign.\
+	- on Smart Event Entry page, there\'92s calendar, and also chatbox. the user can use 
+\fs29\fsmilli14667 \outl0\strokewidth0 \strokec2 Natural language input like \'93Lunch with Sarah next Friday at noon\'94 gets parsed into calendar entries. use API.\
+	- Add a logout button to the top that takes me back to the login page.\
+	- prrmium feature (locked if not a membership): Auto Task Scheduler: Input tasks and deadlines, auto-generate optimal schedules. 
+\f2\fs24 \strokec2 \uc0\u29992 \u25143 \u36755 \u20837 \u24819 \u23436 \u25104 \u30340 \u25152 \u26377 \u20219 \u21153  + \u21508 \u33258 deadline \u31995 \u32479 \u26681 \u25454 \u26102 \u38388 \u31354 \u26723 \u19982 \u20219 \u21153 \u20248 \u20808 \u32423 \u65292 \u33258 \u21160 \u29983 \u25104 \u19968 \u20010 \u39640 \u25928 \u30340 \u26085 \u31243 \u34920 ; \u20351 \u29992  
+\f3\fs26 \strokec2 color coding
+\f2\fs24 \strokec2  \uc0\u26469 \u26631 \u35760 \u19981 \u21516 \u31867 \u22411 \u20219 \u21153 \u65288 \u23398 \u20064 \u12289 \u23089 \u20048 \u12289 \u20581 \u36523 \u31561 \u65289 
+\f1\fs29\fsmilli14667 \strokec2 \
+	- premium feature (Locked if not a membership): Group Availability Coordination: Multiple users can input their availability and find common free time slots. Try the same thing as https://www.when2meet.com/\
+	- Habit-Based Recommendations: Daily routine suggestions based on the user's past behavior. 
+\f2\fs24 \strokec2 \uc0\u31995 \u32479 \u27599 \u22825 \u26681 \u25454 \u20320 \u20197 \u24448 \u30340 \u34892 \u20026 \u20064 \u24815  + \u24773 \u32490 \u29366 \u20917 \u65288 \u20320 \u25171 \u20998 \u65289 \u25512 \u33616 \u19968 \u20010 \'93\u29702 \u24819 \u26085 \u31243 \'94\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec2 \uc0\u29992 \u20110 \u26102 \u38388 \u31649 \u29702  & \u24773 \u32490 \u31649 \u29702 \u65288 Morning Journal\u12289 Evening Reflection). users can record their daily mood. (you can have signs like \'93happy\'94 \'93sad\'94, etc.)\
+\
+2. Visual Design:\
+	- use as concise as possible scheme. make all things easy to understand, easy to use.\
+	- name it \'93PlanWise\'94\
+3. Technical Requirements:\
+   - Built with React (create-react-app)\
+   - Use Stripe for handling payment on a seperate backend java server\
+   - Use Tailwind CSS for styling\
+   - Make it responsive for different screen sizes\
+Please generate ALL the necessary files for this application:\
+1a. A complete package.json with all required dependencies for front end\
+1b. A complete package.json with all required dependencies for backe end\
+2. App.js with the full React component\
+3. tailwind.config.js for the Tailwind setup\
+4. postcss.config.js for PostCSS configuration\
+5. index.css with all required styles including Tailwind directives\
+6. server.js file with backend server code\
+7. A components folder with all the component files.  Put all compents in here, so App.js can import them.  This makes the app more modular and eaiser to edit.\
+\
+I will create an app in VS code, and then add in or edit the app files.  Please provide a full file directory and insttructions on what to created or edit, and how to run the app.  Assume I begin with VS code and have already installed nodjs.\
+}
